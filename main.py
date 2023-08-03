@@ -12,18 +12,19 @@ print("1 - Facil: 7 tentativas\n")
 print("2 - Medio: 5 tentativas\n")
 print("3 - Dificil: 3 tentativas\n")
 nivel = int(input("Digite o numero equivalente a dificuldade escolhida: \n"))
+type(nivel)
 
 while nivel < 1 or nivel > 3:
-    print("NIVEL ESCOLHIDO INVALIDO. DEVE SER ENTRE 1 E 3.\n\n")
+    print("NIVEL ESCOLHIDO INVALIDO. DEVE SER ENTRE 1 E 3.\n")
     print("Escolha um nível de dificuldade: \n")
     print("1 - Facil: 7 tentativas\n")
     print("2 - Medio: 5 tentativas\n")
     print("3 - Dificil: 3 tentativas\n")
-    nivel = input("Digite o numero equivalente a dificuldade escolhida: \n")
+    nivel = int(input("Digite o numero equivalente a dificuldade escolhida: \n"))
 
 if nivel == 1:
     total_tentativas = 7
-elif nivel == 1:
+elif nivel == 2:
     total_tentativas = 5
 else:
     total_tentativas = 3
