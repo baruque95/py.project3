@@ -6,6 +6,7 @@ print("*********************")
 
 numero_secreto = int(r.randrange(1, 101)) # A função random.random gera um numero entre 0.0 e 1.0
 rodada = 1
+pontos = 1000
 
 print("Escolha um nível de dificuldade: \n")
 print("1 - Facil: 15 tentativas\n")
@@ -49,6 +50,8 @@ for rodada in range(1, total_tentativas + 1):
             print("O numero digitado eh maior que o numero secreto...")
         elif menor:
             print("O numero digitado eh menor que o numero secreto...")
+        pontos_perdidos = abs(numero_secreto - chute)    #função abs retorna o valor sem sinal
+        pontos -= pontos_perdidos
 
     if not acertou:
         print("Acabaram suas chances e voce perdeu...")
